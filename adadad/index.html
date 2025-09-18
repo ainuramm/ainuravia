@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AviaSales - Авиабилеты</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Навбар -->
+  <header class="bg-white shadow-md fixed top-0 w-full z-10">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <!-- Логотип -->
+      <!-- Онлайн -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Aviasales_logo.png" alt="AviaSales" class="h-8">
+      <!-- Офлайн -->
+      <!-- <img src="images/logo.png" alt="AviaSales" class="h-8"> -->
+
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#home" class="hover:text-blue-600">Главная</a>
+        <a href="#about" class="hover:text-blue-600">О нас</a>
+        <a href="#destinations" class="hover:text-blue-600">Направления</a>
+        <a href="#contact" class="hover:text-blue-600">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero секция -->
+  <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center text-white"
+    style="background-image: url('https://images.unsplash.com/photo-1504196606672-aef5c9cefc92');">
+    <!-- Офлайн -->
+    <!-- style="background-image: url('images/hero-bg.jpg');" -->
+    <div class="bg-black bg-opacity-50 p-8 rounded-xl text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">AviaSales</h1>
+      <p class="text-lg md:text-2xl mb-6">Ваши лучшие предложения на авиабилеты</p>
+      <a href="#destinations" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold">
+        Найти билеты
+      </a>
+    </div>
+  </section>
+
+  <!-- О нас -->
+  <section id="about" class="py-20 container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">О компании</h2>
+    <p class="max-w-2xl mx-auto text-gray-600">
+      AviaSales — это ваш надежный помощник в поиске и покупке авиабилетов. Мы собираем лучшие предложения
+      от авиакомпаний и агентств, чтобы вы могли путешествовать выгодно и удобно.
+    </p>
+  </section>
+
+  <!-- Популярные направления -->
+  <section id="destinations" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Популярные направления</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Карточка -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <!-- Онлайн -->
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Мальдивы" class="w-full h-48 object-cover">
+          <!-- Офлайн -->
+          <!-- <img src="images/maldives.jpg" alt="Мальдивы" class="w-full h-48 object-cover"> -->
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Мальдивы</h3>
+            <p class="text-gray-600">Незабываемый отдых на райских островах.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="Париж" class="w-full h-48 object-cover">
+          <!-- <img src="images/paris.jpg" alt="Париж" class="w-full h-48 object-cover"> -->
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Париж</h3>
+            <p class="text-gray-600">Романтика и культура столицы Франции.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="Нью-Йорк" class="w-full h-48 object-cover">
+          <!-- <img src="images/newyork.jpg" alt="Нью-Йорк" class="w-full h-48 object-cover"> -->
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Нью-Йорк</h3>
+            <p class="text-gray-600">Ощутите ритм жизни мегаполиса.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact" class="py-20 container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Свяжитесь с нами</h2>
+    <p class="mb-6 text-gray-600">Мы всегда рады помочь вам с подбором билетов.</p>
+    <form class="max-w-lg mx-auto space-y-4">
+      <input type="text" placeholder="Ваше имя" class="w-full border border-gray-300 p-3 rounded-lg">
+      <input type="email" placeholder="Ваш email" class="w-full border border-gray-300 p-3 rounded-lg">
+      <textarea placeholder="Сообщение" class="w-full border border-gray-300 p-3 rounded-lg"></textarea>
+      <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold">Отправить</button>
+    </form>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>© 2025 AviaSales. Все права защищены.</p>
+  </footer>
+
+</body>
+</html>
